@@ -56,7 +56,7 @@ elseif site.POOLS == 1                                                % TTR
   share.PlantC = share.PlantC - share.BudC;
   share.WoodC  = (1.0 - veg.PlantCReserveFrac) * share.PlantC;
   share.PlantC = share.PlantC - share.WoodC;
-elseif site.POOLs == 2                                                % TTR
+elseif site.POOLS == 2                                                % TTR
   share.PlantCFast = share.PlantCFast - share.BudC;                   % TTR
   share.WoodC      = (1.0 - veg.PlantCReserveFrac) * share.PlantCFast;% TTR
   share.PlantCFast = share.PlantCFast - share.WoodC;                  % TTR

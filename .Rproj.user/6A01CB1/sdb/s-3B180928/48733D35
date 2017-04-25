@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#==============================================================================#\n# Plot climate forcing\n#------------------------------------------------------------------------------#\n\n# Matlab library\n#------------------------------------------------------------------------------#\nlibrary (R.matlab)\n\n# Read cliamte data\n#------------------------------------------------------------------------------#\nHF_arch_daily_1964_2002   <- read.csv ('climIn/hf000-01-daily-m.csv') \nHF_arch_monthly_2002_2017 <- read.csv ('climIn/hf001-04-monthly-m.csv') \nHF_monthly_300y           <- readMat  ('climIn/hf_300y.mat')\nHF_monthly_1000y          <- readMat  ('climIn/hf_1000y_avg.mat')\nHF_daily                  <- readMat  ('climIn/hf_daily.mat')\n\n# Plot from 1691 to 2021\nplot (x    = unlist (HF_monthly_1000y$climIn [3]) [2391:6351],\n      xaxt = 'n',\n      typ  = 'l',\n      ylab = 'tmax (degree C)',\n      xlab = 'year')\naxis (1, labels = as.character (seq (1691, 2021, 10)), at = seq (0, 3960, 120))\n\n# Plot from 1901 to 2017\nplot (x    = unlist (HF_monthly_1000y$climIn [3]) [4801:6204],\n      xaxt = 'n',\n      typ  = 'l',\n      ylab = 'tmax (degree C)',\n      xlab = 'year')\naxis (1, labels = as.character (seq (1901, 2017, 10)), at = seq (0, 1404, 120))\n\n# PLot from 1960 to 2017\nplot (x    = unlist (HF_monthly_1000y$climIn [3]) [5521:6204],\n      xaxt = 'n',\n      typ  = 'l',\n      ylab = 'tmax (degree C)',\n      xlab = 'year')\naxis (1, labels = as.character (seq (1961, 2017, 10)), at = seq (0, 684, 120))\nlines (x   = unlist (HF_monthly_300y$climIn [3]) [2121:2805],\n       )\n#==============================================================================#",
+    "created" : 1493152409402.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2961376661",
+    "id" : "48733D35",
+    "lastKnownWriteTime" : 1493154784,
+    "last_content_update" : 1493154784220,
+    "path" : "~/Desktop/NSC modelling/PnET_M2.2/p_climIn.R",
+    "project_path" : "p_climIn.R",
+    "properties" : {
+        "tempName" : "Untitled8"
+    },
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

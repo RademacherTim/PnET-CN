@@ -11,7 +11,7 @@ if (site.POOLS == 0) || (site.POOLS == 1)                     % TTR
   share.PlantC      = share.PlantC    + share.NetPsnMo - ...  
                       share.FolGRespMo;
 elseif site.POOLS == 2                                        % TTR
-  share.PlantCfast = share.PlantCfast + share.NetPsnMo - ...  % TTR
+  share.PlantCFast = share.PlantCFast + share.NetPsnMo - ...  % TTR
                      share.FolGRespMo;                        % TTR
 end                                                           % TTR
 share.WoodMRespMo = share.CanopyGrossPsnActMo * veg.WoodMRespA;
@@ -58,7 +58,7 @@ if (site.POOLS == 0) || (site.POOLS == 1)                       % TTR
                      share.WoodMRespMo - share.WoodGRespMo;     % TTR
 elseif site.POOLS == 2                                          % TTR
   share.PlantCFast = share.PlantCFast  - share.RootCAdd - ...   % TTR
-                     share.WoodMRespMo - WoodGRespMo;           % TTR
+                     share.WoodMRespMo - share.WoodGRespMo;     % TTR
                  
   % Transport between fast and slow storage                     % TTR
   CTransfer = (share.PlantCSlow - share.PlantCFast) * share.PlantC_tau;

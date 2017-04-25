@@ -9,12 +9,12 @@ library (R.matlab)
 months <- c ('jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec')
 
 # Read data files
-data0    <- readMat ('outputs/out_no_pool.mat')
-data1    <- readMat ('outputs/out_one_pool.mat')
-data2    <- readMat ('outputs/out_two_pool.mat')
-data0.2  <- readMat ('outputs/out_no_pool_defoliation_event_full.mat')
-data1.2  <- readMat ('outputs/out_one_pool_defoliation_event_full.mat')
-data2.1  <- readMat ('outputs/out_two_pool_defoliation_event_full.mat')
+data0    <- readMat ('outputs/out_no_pool_control.mat')
+data1    <- readMat ('outputs/out_one_pool_control.mat')
+data2    <- readMat ('outputs/out_two_pool_control.mat')
+data0.1  <- readMat ('outputs/out_no_pool_0p75.mat')
+data1.1  <- readMat ('outputs/out_one_pool_0p75.mat')
+data2.1  <- readMat ('outputs/out_two_pool_0p75.mat')
 
 # Get Carbon Cycle variables for no pool model
 plantcMo0 <- as.numeric (unlist (data0$out [ 7]))
