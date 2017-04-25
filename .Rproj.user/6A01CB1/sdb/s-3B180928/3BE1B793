@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Plot wood NPP\nplot (x    = as.numeric (unlist (data0$out  [17])) [201:297], \n      typ  = 'l',\n      ylim = c (200, 810),\n      lwd  = 2,\n      ylab = 'Wood NPP',\n      xaxt = 'n',\n      xlab = 'Year',\n      col  = 'darkgrey')\nlines (x   = as.numeric (unlist (data0.1$out [17])) [201:297],\n       lty = 2,\n       lwd = 2,\n       col = 'darkgrey')\nlines (x   = as.numeric (unlist (data1$out   [17])) [201:297],\n       lty = 1,\n       lwd = 2,\n       col = 'purple')\nlines (x   = as.numeric (unlist (data1.1$out [17])) [201:297],\n       lty = 2,\n       lwd = 2,\n       col = 'purple')\nlines (x   = as.numeric (unlist (data2$out   [17])) [201:297],\n       lty = 1,\n       lwd = 2,\n       col = 'darkgreen')\nlines (x   = as.numeric (unlist (data2.1$out [17])) [201:297],\n       lty = 2,\n       lwd = 2,\n       col = 'darkgreen')\naxis (1, labels = c ('1900','1910','1920','1930','1940','1950','1960','1970','1980','1990','2000'), at = seq (0, 100, 10))\n\n\nwrite.csv (x = cbind (as.numeric (unlist(data0$out   [17])),\n                      as.numeric (unlist(data0.1$out [17])),\n                      as.numeric (unlist(data1$out   [17])),\n                      as.numeric (unlist(data1.1$out [17])),\n                      as.numeric (unlist(data2$out   [17])),\n                      as.numeric (unlist(data2.1$out [17]))), \n           file = 'outputs/nppwood.csv')\n\n",
+    "created" : 1493048839071.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2175499938",
+    "id" : "3BE1B793",
+    "lastKnownWriteTime" : 2317438866862112768,
+    "last_content_update" : 1493049652868,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled4"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

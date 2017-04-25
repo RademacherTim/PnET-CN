@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Read the climate data\n",
+    "created" : 1493127839897.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3705646227",
+    "id" : "AAD93D6E",
+    "lastKnownWriteTime" : 6,
+    "last_content_update" : 1493127848689,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled7"
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

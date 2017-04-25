@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Plot monthly LAI\nplot (x    = as.numeric (unlist (data1$out [16])) [2413:2662], \n      typ  = 'l',\n      ylim = c (0, 95),\n      lwd  = 1,\n      ylab = 'LAI',\n      xaxt = 'n',\n      xlab = 'Year',\n      col  = 'darkgrey')\nlines (x   = as.numeric (unlist (data1.1$out [16])) [2413:2662],\n       lty = 2,\n       lwd = 1,\n       col = 'darkgrey')\nlines (x   = as.numeric (unlist (data0$out [17])) [2413:2662],\n       lty = 1,\n       lwd = 1,\n       col = 'purple')\nlines (x   = as.numeric (unlist (data0.1$out [17])) [201:297],\n       lty = 2,\n       lwd = 1,\n       col = 'purple')\nlines (x   = as.numeric (unlist (data2$out [17])) [201:297],\n       lty = 1,\n       lwd = 1,\n       col = 'darkgreen')\nlines (x  = as.numeric (unlist (data2.1$out [17])) [201:297],\n       lty = 2,\n       lwd = 1,\n       col = 'darkgreen')\nabline (v = 114)\n",
+    "created" : 1493059814204.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1502583850",
+    "id" : "A0E04D19",
+    "lastKnownWriteTime" : 4321727936,
+    "last_content_update" : 1493061541040,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled5"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

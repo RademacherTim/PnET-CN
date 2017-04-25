@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Get Gross Photosynthetic rate\ngrosspsn0   <- as.numeric (unlist (data0$out   [1]))\ngrosspsn0.1 <- as.numeric (unlist (data0.1$out [1]))\ngrosspsn1   <- as.numeric (unlist (data1$out   [1]))\ngrosspsn1.1 <- as.numeric (unlist (data1.1$out [1]))\ngrosspsn2   <- as.numeric (unlist (data2$out   [1]))\ngrosspsn2.1 <- as.numeric (unlist (data2.1$out [1]))\n\n# Extract for 1901-1996 and sum for total NSC budget\ngrosspsn0 <- grosspsn0 [2413:3564]; grosspsn0.1 <- grosspsn0.1 [2413:3564]\ngrosspsn1 <- grosspsn1 [2413:3564]; grosspsn1.1 <- grosspsn1.1 [2413:3564]\ngrosspsn2 <- grosspsn2 [2413:3564]; grosspsn2.1 <- grosspsn2.1 [2413:3564]\n\nplot (x    = grosspsn0 [100:240],\n      typ  = 'l')\nlines (x   = grosspsn0.1 [100:240], col = 'red')\n\nplot (x   = grosspsn1 [100:240], typ = 'l')\nlines (x   = grosspsn1.1 [100:240], col = 'red')\n\nplot (x   = grosspsn2 [100:240], typ = 'l')\nlines (x   = grosspsn2.1 [100:240], col = 'red')\n\n# Get GGP\nGPP0   <- as.numeric (unlist (data0$out   [20]))\nGPP0.1 <- as.numeric (unlist (data0.1$out [20]))\nGPP1   <- as.numeric (unlist (data1$out   [20]))\nGPP1.1 <- as.numeric (unlist (data1.1$out [20]))\nGPP2   <- as.numeric (unlist (data2$out   [22]))\nGPP2.1 <- as.numeric (unlist (data2.1$out [22]))\n\n# Extract for 1901-1996 and sum for total NSC budget\nGPP0 <- GPP0 [201:297]; GPP0.1 <- GPP0.1 [201:297]\nGPP1 <- GPP1 [201:297]; GPP1.1 <- GPP1.1 [201:297]\nGPP2 <- GPP2 [201:297]; GPP2.1 <- GPP2.1 [201:297]\n\n# Plot annual GPP\nplot (x    = GPP0 [5:20],\n      typ  = 'l',\n      ylim = c (300, 1400),\n      xaxt = 'n',\n      ylab = expression (paste ('GPP (gC ',m^-2,')')),\n      xlab = 'Year',\n      col = 'darkgrey',\n      lwd = 2)\naxis (1, labels = c ('1905','1906','1907','1908','1909','1910',\n                     '1911','1912','1913','1914','1915','1916','1917','1918','1919','1920'), at = 1:16)\nlines (x   = GPP0.1 [5:20],\n       col = 'darkgrey',\n       lty = 2,\n       lwd = 2)\nlines (x   = GPP1   [5:20],\n       col = 'purple',\n       lwd = 2)\nlines (x   = GPP1.1 [5:20], \n       col = 'purple',\n       lty = 2,\n       lwd = 2)\n#lines (x   = GPP2   [1:20],\n#       col = 'darkgreen',\n#       lwd = 2)\n#lines (x   = GPP2.1 [1:20], \n#       col = 'darkgreen',\n#       lty = 2,\n#       lwd = 2)\nrect (0, 0, 6, 1500, col = '#66666633')\nlegend (1, 400, c ('NULL','TWO'), \n        box.lty = 0,\n        bg  = 'transparent',\n        col = c ('purple','darkgrey'),\n        lty = 1,\n        lwd = 2)\n",
+    "created" : 1492718727131.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1298784406",
+    "id" : "CFACEF06",
+    "lastKnownWriteTime" : 6,
+    "last_content_update" : 1492788014769,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
