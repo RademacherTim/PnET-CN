@@ -11,8 +11,7 @@ source ('p_tmax.R')
 READ <- FALSE
 if (READ) {
   tmin            <- matrix (NA, nrow = 117 * 12, ncol = 8)
-  colnames (tmin) <- c ('year','month','HF_1','HF_2','PnET_1','PnET_2','PnET_3',
-                        'Princeton')
+  colnames (tmin) <- cnames
   
   # Put years and months into the tmax matirx
   #----------------------------------------------------------------------------#
@@ -112,6 +111,7 @@ if (READ) {
 }
 
 # Plot overlapping years of the climate data
+par (mar = c (5, 5, 1, 1))
 plot (x    = tmin [1165:1248, 4],
       typ  = 'l',
       ylim = c (-15, 18),

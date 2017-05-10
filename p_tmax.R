@@ -20,6 +20,8 @@ HF_daily                  <- readMat  ('climIn/hf_daily.mat')
 #------------------------------------------------------------------------------#
 months.abb <- c ('January','February','March','April','May','June','July','August',
                  'September','October','November','December')
+cnames     <- c ('year','month','HF_1','HF_2','PnET_1','PnET_2','PnET_3',
+                 'Princeton')
 
 # Prepare tmax
 #------------------------------------------------------------------------------#

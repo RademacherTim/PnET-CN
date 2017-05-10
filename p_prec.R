@@ -11,8 +11,7 @@ source ('p_tmax.R')
 READ <- FALSE
 if (READ) {
   prec            <- matrix (NA, nrow = 117 * 12, ncol = 8)
-  colnames (tmin) <- c ('year','month','HF_1','HF_2','PnET_1','PnET_2','PnET_3',
-                        'Princeton')
+  colnames (tmin) <- cnames
   
   # Put years and months into the tmax matirx
   #----------------------------------------------------------------------------#
