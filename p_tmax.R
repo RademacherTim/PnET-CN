@@ -124,6 +124,7 @@ if (READ) {
 }
 
 # Plot overlapping years of the climate data
+par (mar = c (5, 5, 1, 1))
 plot (x    = tmax [1165:1248, 4],
       typ  = 'l',
       ylim = c (-5, 31),
@@ -147,4 +148,12 @@ lines (x   = tmax [1165:1248, 8],
 axis (side   = 1, 
       at     = seq (6, 84, by = 12), # Show years label in june 
       labels = as.character (seq (1999, 2005, 1)))
+legend (x = 1,
+        y = 0,
+        c ('Shaler', 'Fisher', 'Princeton'),
+        col = c ('#990000','#91b9a4','#EE7F2D66'),
+        lty = c (4,2,1),
+        lwd = 2,
+        box.lty = 0,
+        bg  = 'transparent')
 #==============================================================================#
