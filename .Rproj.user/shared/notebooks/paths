@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 /Volumes/Samsung SSD 850 EVO /projects/PnET-CN/compare_clim.R="7F61E036"
 /Volumes/Samsung SSD 850 EVO /projects/PnET-CN/p_climIn.R="58412EA2"
 /Volumes/Samsung SSD 850 EVO /projects/PnET-CN/p_prec.R="F088E752"
 /Volumes/Samsung SSD 850 EVO /projects/PnET-CN/p_rads.R="74F51780"
 /Volumes/Samsung SSD 850 EVO /projects/PnET-CN/p_tmax.R="E0301BA5"
 /Volumes/Samsung SSD 850 EVO /projects/PnET-CN/p_tmin.R="9A2A19A7"
+=======
+/Users/trademacher/Desktop/NSC modelling/PnET-CN/convert_mat_to_csv.R="9DE4B6C6"
+/Users/trademacher/Desktop/NSC modelling/PnET-CN/p_rads.R="FF6F79B5"
+/Users/trademacher/Desktop/NSC modelling/PnET-CN/prep_inputs.R="456EA633"
+>>>>>>> Stashed changes

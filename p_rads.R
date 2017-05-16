@@ -82,6 +82,7 @@ if (READ) {
   }
   
   # Make a copy of this data.frame so I dont always have to read them in
+<<<<<<< Updated upstream
   write.csv (rads, 'climIn/rads.csv', row.names = FALSE)
   
 } else {
